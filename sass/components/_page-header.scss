@@ -6,9 +6,9 @@
   padding-top: 24px;
   padding-bottom: 25px;
   background-color: var(--main-white);
-  border-bottom: 1px solid var(--header-border-color);
+  border-bottom: 1px solid var(--header-border);
   *:focus-visible {
-    outline-color: var(--secondary-accent);
+    outline-color: var(--accented-accent);
     outline-style: dashed;
     outline-width: 1px;
   }
@@ -27,7 +27,7 @@
   position: relative;
   font-weight: 500;
   letter-spacing: 0.02em;
-  color: var(--secondary-text);
+  color: var(--secondary-txt);
   transition: color var(--transition-duration) var(--transition-timing);
   &:hover,
   &:focus {

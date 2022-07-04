@@ -1,10 +1,5 @@
 .about__title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  margin-bottom: 50px;
-  color: var(--secondary-text);
+  @extend %section-title;
 }
 .about__list {
   display: flex;
@@ -14,6 +9,7 @@
 }
 .about__item {
   position: relative;
+  background-color: var(--light-bg);
 }
 .about__desc {
   @extend %flex-centered;

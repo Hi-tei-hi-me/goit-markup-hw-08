@@ -19,7 +19,7 @@
 .modal-close-btn {
   width: 30px;
   height: 30px;
-  border: 1px solid var(--btn-border-color);
+  border: 1px solid var(--modal-btn-border);
   border-radius: 50%;
   background-color: var(--main-white);
   position: absolute;
@@ -28,7 +28,7 @@
   cursor: pointer;
 }
 .close-icon {
-  fill: var(--close-icon);
+  fill: var(--modal-close-icon);
   transition: fill var(--transition-duration) var(--transition-timing);
   .modal-close-btn:hover &,
   .modal-close-btn:focus & {
@@ -42,7 +42,7 @@
   font-size: 20px;
   line-height: calc(23 / 20);
   text-align: center;
-  color: var(--secondary-text);
+  color: var(--secondary-txt);
 }
 .form-field {
   display: flex;
@@ -78,18 +78,18 @@
   font-size: 12px;
   line-height: calc(14 / 12);
   letter-spacing: 0.01em;
-  color: var(--main-text);
+  color: var(--main-txt);
 }
 .input-wrap {
   position: relative;
 }
 .form-input {
-  border: 1px solid var(--input-border);
+  border: 1px solid var(--modal-input-border);
   border-radius: 4px;
   transition: border var(--transition-duration) var(--transition-timing);
   &::placeholder {
     letter-spacing: 0.01em;
-    color: var(--placeholder-color);
+    color: var(--modal-placeholder);
   }
 }
 .input-icon {
@@ -97,7 +97,7 @@
   left: 12px;
   top: 50%;
   transform: translateY(-50%);
-  fill: var(--secondary-text);
+  fill: var(--secondary-txt);
   transition: fill var(--transition-duration) var(--transition-timing);
   .form-field:hover &,
   .form-field:focus &,
@@ -110,13 +110,13 @@
   font-size: 14px;
   line-height: 1.71;
   margin-bottom: 30px;
-  color: var(--main-text);
+  color: var(--main-txt);
   span {
     margin-right: 7px;
     width: 16px;
     height: 15px;
     background-color: transparent;
-    border: 2px solid var(--secondary-text);
+    border: 2px solid var(--secondary-txt);
     border-radius: 2px;
     display: flex;
     align-items: center;

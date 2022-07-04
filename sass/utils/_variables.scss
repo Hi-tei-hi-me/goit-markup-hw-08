@@ -1,26 +1,26 @@
 :root {
   --main-font: "Roboto", "Open Sans", sans-serif;
 
-  --main-text: #757575;
-  --secondary-text: #212121;
   --main-white: #ffffff;
+  --dark-bg: #2f303a;
+  --light-bg: #f5f4fa;
+  --main-txt: #757575;
+  --secondary-txt: #212121;
   --accent: #2196f3;
-  --secondary-accent: #188ce8;
-  --dark-background: #2f303a;
-  --light-background: #f5f4fa;
-  --footer-contact: rgba(255, 255, 255, 0.6);
-  --footer-icon-bg: rgba(255, 255, 255, 0.1);
-  --header-border-color: #ececec;
-  --btn-border-color: rgba(0, 0, 0, 0.1);
-  --border: #eeeeee;
-  --input-border: rgba(33, 33, 33, 0.2);
-  --main-icon-color: #afb1b8;
-  --close-icon: #000000;
-  --backdrop-color: rgba(0, 0, 0, 0.2);
-  --placeholder-color: rgba(117, 117, 117, 0.5);
-  --footer-input-border: rgba(255, 255, 255, 0.3);
-  --project-hover: rgba(33, 150, 243, 0.9);
+  --accented-accent: #188ce8;
+  --icon: #afb1b8;
+  --header-border: #ececec;
   --about-label: rgba(47, 48, 58, 0.8);
+  --footer-elements: rgba(255, 255, 255, 0.6);
+  --footer-icon-bg: rgba(255, 255, 255, 0.1);
+  --footer-input-border: rgba(255, 255, 255, 0.3);
+  --backdrop: rgba(0, 0, 0, 0.2);
+  --modal-btn-border: rgba(0, 0, 0, 0.1);
+  --modal-input-border: rgba(33, 33, 33, 0.2);
+  --modal-close-icon: #000000;
+  --modal-placeholder: rgba(117, 117, 117, 0.5);
+  --project-border: #eeeeee;
+  --project-hover: rgba(33, 150, 243, 0.9);
 
   --transition-duration: 250ms;
   --transition-timing: cubic-bezier(0.4, 0, 0.2, 1);

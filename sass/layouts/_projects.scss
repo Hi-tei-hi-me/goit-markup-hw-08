@@ -6,7 +6,7 @@
     margin-right: 8px;
   }
   *:focus-visible {
-    outline-color: var(--secondary-accent);
+    outline-color: var(--accented-accent);
     outline-width: 1px;
   }
 }
@@ -35,6 +35,7 @@
 .project-wrap {
   position: relative;
   overflow: hidden;
+  background-color: var(--light-bg);
 }
 .project-desc {
   position: absolute;
@@ -61,7 +62,7 @@
   line-height: 2;
   letter-spacing: 0.06em;
   margin-bottom: 4px;
-  color: var(--secondary-text);
+  color: var(--secondary-txt);
 }
 .project-type {
   font-size: 16px;

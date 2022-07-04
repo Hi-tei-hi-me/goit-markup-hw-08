@@ -1,13 +1,8 @@
 .team {
-  background-color: var(--light-background);
+  background-color: var(--light-bg);
 }
 .team__title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  margin-bottom: 50px;
-  color: var(--secondary-text);
+  @extend %section-title;
 }
 .team__list {
   display: flex;
@@ -16,6 +11,7 @@
   }
 }
 .team__member {
+  background-color: var(--modal-input-border);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
 }
@@ -25,7 +21,7 @@
   line-height: 1.19;
   text-align: center;
   margin-bottom: 10px;
-  color: var(--secondary-text);
+  color: var(--secondary-txt);
 }
 .team__position {
   font-size: 16px;

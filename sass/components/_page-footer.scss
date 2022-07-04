@@ -1,7 +1,7 @@
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
-  background-color: var(--dark-background);
+  background-color: var(--dark-bg);
   .container {
     display: flex;
     align-items: baseline;
@@ -27,7 +27,7 @@
 }
 .footer__contact {
   font-style: normal;
-  color: var(--footer-contact);
+  color: var(--footer-elements);
   transition: color var(--transition-duration) var(--transition-timing);
   &:hover,
   &:focus {
@@ -60,6 +60,6 @@
   &::placeholder {
     font-size: 16px;
     line-height: 1.25;
-    color: var(--footer-contact);
+    color: var(--footer-elements);
   }
 }

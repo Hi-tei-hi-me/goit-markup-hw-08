@@ -1,0 +1,27 @@
+%flex-centered {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+%basic-btn {
+  font-family: var(--main-font);
+  font-size: 16px;
+  border: 0;
+  border-radius: 4px;
+  cursor: pointer;
+}
+%main-btn {
+  font-weight: 700;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  min-width: 200px;
+  min-height: 50px;
+  color: var(--main-white);
+  background-color: var(--accent);
+  transition: background-color var(--transition-duration)
+    var(--transition-timing);
+  &:hover,
+  &:focus {
+    background-color: var(--secondary-accent);
+  }
+}

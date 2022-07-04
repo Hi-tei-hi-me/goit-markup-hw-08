@@ -1,0 +1,29 @@
+:root {
+  --main-font: "Roboto", "Open Sans", sans-serif;
+
+  --main-text: #757575;
+  --secondary-text: #212121;
+  --main-white: #ffffff;
+  --accent: #2196f3;
+  --secondary-accent: #188ce8;
+  --dark-background: #2f303a;
+  --light-background: #f5f4fa;
+  --footer-contact: rgba(255, 255, 255, 0.6);
+  --footer-icon-bg: rgba(255, 255, 255, 0.1);
+  --header-border-color: #ececec;
+  --btn-border-color: rgba(0, 0, 0, 0.1);
+  --border: #eeeeee;
+  --input-border: rgba(33, 33, 33, 0.2);
+  --main-icon-color: #afb1b8;
+  --close-icon: #000000;
+  --backdrop-color: rgba(0, 0, 0, 0.2);
+  --placeholder-color: rgba(117, 117, 117, 0.5);
+  --footer-input-border: rgba(255, 255, 255, 0.3);
+  --project-hover: rgba(33, 150, 243, 0.9);
+  --about-label: rgba(47, 48, 58, 0.8);
+
+  --transition-duration: 250ms;
+  --transition-timing: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+$icons: "antenna", "clock", "diagram", "astronaut";

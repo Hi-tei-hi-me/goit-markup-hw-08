@@ -1,0 +1,30 @@
+.about__title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  margin-bottom: 50px;
+  color: var(--secondary-text);
+}
+.about__list {
+  display: flex;
+  li:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+.about__item {
+  position: relative;
+}
+.about__desc {
+  @extend %flex-centered;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--main-white);
+  background-color: var(--about-label);
+}

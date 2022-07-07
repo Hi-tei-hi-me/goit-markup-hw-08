@@ -1,3 +1,34 @@
+.mob-menu__btn {
+  z-index: 25;
+  display: inline-flex;
+  margin-left: auto;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  & .icon-menu-close {
+    display: none;
+  }
+  &.is-open .icon-menu-close {
+    display: block;
+  }
+  &.is-open .icon-menu {
+    display: none;
+  }
+  svg {
+    fill: var(--secondary-txt);
+    transition: fill var(--transition-duration) var(--transition-timing);
+  }
+  &:hover svg,
+  &:focus svg {
+    fill: var(--accent);
+  }
+  @include tablet {
+    display: none;
+  }
+  @include desktop {
+    display: none;
+  }
+}
 .hero__btn {
   @extend %basic-btn;
   @extend %main-btn;
@@ -8,6 +39,7 @@
   @extend %basic-btn;
   @extend %main-btn;
   padding: 10px 29px;
+  margin: 0 auto;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   svg {
     margin-left: 10px;

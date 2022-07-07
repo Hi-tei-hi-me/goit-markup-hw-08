@@ -2,12 +2,27 @@
   display: block;
   font-family: "Raleway", "Open Sans", sans-serif;
   font-weight: 700;
+  font-size: 24px;
+  line-height: calc(28 / 24);
   color: var(--accent);
-  font-size: 26px;
-  line-height: 1.19;
+  transition: color var(--transition-duration) var(--transition-timing);
+  &:hover,
+  &:focus,
+  &:focus-visible {
+    color: var(--accented-accent);
+  }
+  @include desktop {
+    font-size: 26px;
+    line-height: 1.19;
+  }
 }
 .header__logo {
-  margin-right: 93px;
+  @include tablet {
+    margin-right: 88px;
+  }
+  @include desktop {
+    margin-right: 93px;
+  }
 }
 .footer__logo {
   margin-bottom: 20px;

@@ -32,7 +32,7 @@
         <a href="./index.html" class="logo header__logo"
           >Web<span class="logo__accent">Studio</span></a
         >
-        <nav>
+        <nav class="header__nav">
           <ul class="header__nav-list">
             <li>
               <a class="header__nav-link current" href="./index.html">Студия</a>
@@ -61,6 +61,71 @@
             >
           </li>
         </ul>
+        <button
+          type="button"
+          class="mob-menu__btn"
+          aria-expanded="false"
+          aria-controls="mob-menu"
+          data-menu-button
+        >
+          <svg
+            width="40"
+            height="40"
+            aria-label="Переключатель мобильного меню"
+          >
+            <use
+              class="icon-menu-close"
+              href="./images/icons.svg#icon-menu-close"
+            ></use>
+            <use class="icon-menu" href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
+        <nav class="mob-menu" id="mob-menu" data-menu>
+          <ul class="mob-menu__nav">
+            <li class="mob-menu__nav-item">
+              <a class="mob-menu__nav-link mob-current" href="./index.html"
+                >Студия</a
+              >
+            </li>
+            <li class="mob-menu__nav-item">
+              <a class="mob-menu__nav-link" href="./portfolio.html"
+                >Портфолио</a
+              >
+            </li>
+            <li class="mob-menu__nav-item">
+              <a class="mob-menu__nav-link" href="#contacts">Контакты</a>
+            </li>
+          </ul>
+          <ul class="mob-menu__contact-list">
+            <li class="mob-menu__contact">
+              <a class="mob-menu__contact-tel" href="tel:+380961111111">
+                +38 096 111 11 11</a
+              >
+            </li>
+            <li class="mob-menu__contact">
+              <a
+                class="mob-menu__contact-email"
+                href="mailto:info@devstudio.com"
+              >
+                info@devstudio.com</a
+              >
+            </li>
+          </ul>
+          <ul class="mob-menu__socials">
+            <li class="mob-menu__network">
+              <a class="mob-menu__network-link" href="">Instagram</a>
+            </li>
+            <li class="mob-menu__network">
+              <a class="mob-menu__network-link" href="">Twitter</a>
+            </li>
+            <li class="mob-menu__network">
+              <a class="mob-menu__network-link" href="">Facebook</a>
+            </li>
+            <li class="mob-menu__network">
+              <a class="mob-menu__network-link" href="">LinkedIn</a>
+            </li>
+          </ul>
+        </nav>
       </div>
     </header>
     <main>
@@ -115,28 +180,34 @@
           <ul class="about__list">
             <li class="about__item">
               <img
-                src="./images/about/about-img1.jpg"
+                srcset="
+                  ./images/about/about1.jpg    370w,
+                  ./images/about/about1@2x.jpg 740w
+                "
+                src="./images/about/about1.jpg"
                 alt="what we do no.1"
-                width="370"
-                height="294"
               />
               <p class="about__desc">Десктопные приложения</p>
             </li>
             <li class="about__item">
               <img
-                src="./images/about/about-img2.jpg"
+                srcset="
+                  ./images/about/about2.jpg    370w,
+                  ./images/about/about2@2x.jpg 740w
+                "
+                src="./images/about/about2.jpg"
                 alt="what we do no.2"
-                width="370"
-                height="294"
               />
-              <p class="about__desc">мобильные приложения</p>
+              <p class="about__desc">Мобильные приложения</p>
             </li>
             <li class="about__item">
               <img
-                src="./images/about/about-img3.jpg"
+                srcset="
+                  ./images/about/about3.jpg    370w,
+                  ./images/about/about3@2x.jpg 740w
+                "
+                src="./images/about/about3.jpg"
                 alt="what we do no.3"
-                width="370"
-                height="294"
               />
               <p class="about__desc">Дизайнерские решения</p>
             </li>
@@ -149,10 +220,12 @@
           <ul class="team__list">
             <li class="team__member">
               <img
-                src="./images/team/team-img1.jpg"
+                srcset="
+                  ./images/team/desk-member1.jpg    270w,
+                  ./images/team/desk-member1@2x.jpg 540w
+                "
+                src="./images/team/desk-member1.jpg"
                 alt="very important team member"
-                width="270"
-                height="260"
               />
               <div class="caption">
                 <h3 class="team__name">Игорь Демьяненко</h3>
@@ -201,10 +274,12 @@
             </li>
             <li class="team__member">
               <img
-                src="./images/team/team-img2.jpg"
+                srcset="
+                  ./images/team/desk-member2.jpg    270w,
+                  ./images/team/desk-member2@2x.jpg 540w
+                "
+                src="./images/team/desk-member2.jpg"
                 alt="very important team member"
-                width="270"
-                height="260"
               />
               <div class="caption">
                 <h3 class="team__name">Ольга Репина</h3>
@@ -253,10 +328,12 @@
             </li>
             <li class="team__member">
               <img
-                src="./images/team/team-img3.jpg"
+                srcset="
+                  ./images/team/desk-member3.jpg    270w,
+                  ./images/team/desk-member3@2x.jpg 540w
+                "
+                src="./images/team/desk-member3.jpg"
                 alt="very important team member"
-                width="270"
-                height="260"
               />
               <div class="caption">
                 <h3 class="team__name">Николай Тарасов</h3>
@@ -305,10 +382,12 @@
             </li>
             <li class="team__member">
               <img
-                src="./images/team/team-img4.jpg"
+                srcset="
+                  ./images/team/desk-member4.jpg    270w,
+                  ./images/team/desk-member4@2x.jpg 540w
+                "
+                src="./images/team/desk-member4.jpg"
                 alt="very important team member"
-                width="270"
-                height="260"
               />
               <div class="caption">
                 <h3 class="team__name">Михаил Ермаков</h3>
@@ -362,56 +441,38 @@
         <div class="container">
           <h2 class="clients__title">Постоянные клиенты</h2>
           <ul class="clients__list">
-            <li>
-              <a
-                class="clients__link"
-                href=""
-                rel="noopener nofollow noreferrer"
+            <li class="client__item">
+              <a class="client__link" href="" rel="noopener nofollow noreferrer"
                 ><svg class="clients__icon" width="106" height="60">
                   <use href="./images/icons.svg#icon-client1"></use></svg
               ></a>
             </li>
-            <li>
-              <a
-                class="clients__link"
-                href=""
-                rel="noopener nofollow noreferrer"
+            <li class="client__item">
+              <a class="client__link" href="" rel="noopener nofollow noreferrer"
                 ><svg class="clients__icon" width="106" height="60">
                   <use href="./images/icons.svg#icon-client2"></use></svg
               ></a>
             </li>
-            <li>
-              <a
-                class="clients__link"
-                href=""
-                rel="noopener nofollow noreferrer"
+            <li class="client__item">
+              <a class="client__link" href="" rel="noopener nofollow noreferrer"
                 ><svg class="clients__icon" width="106" height="60">
                   <use href="./images/icons.svg#icon-client3"></use></svg
               ></a>
             </li>
-            <li>
-              <a
-                class="clients__link"
-                href=""
-                rel="noopener nofollow noreferrer"
+            <li class="client__item">
+              <a class="client__link" href="" rel="noopener nofollow noreferrer"
                 ><svg class="clients__icon" width="106" height="60">
                   <use href="./images/icons.svg#icon-client4"></use></svg
               ></a>
             </li>
-            <li>
-              <a
-                class="clients__link"
-                href=""
-                rel="noopener nofollow noreferrer"
+            <li class="client__item">
+              <a class="client__link" href="" rel="noopener nofollow noreferrer"
                 ><svg class="clients__icon" width="106" height="60">
                   <use href="./images/icons.svg#icon-client5"></use></svg
               ></a>
             </li>
-            <li>
-              <a
-                class="clients__link"
-                href=""
-                rel="noopener nofollow noreferrer"
+            <li class="client__item">
+              <a class="client__link" href="" rel="noopener nofollow noreferrer"
                 ><svg class="clients__icon" width="106" height="60">
                   <use href="./images/icons.svg#icon-client6"></use></svg
               ></a>
@@ -423,10 +484,10 @@
     <footer class="footer">
       <div class="container">
         <div class="footer__contacts" id="contacts">
-          <a href="./index.html" class="logo footer__logo"
-            >Web<span class="logo__accent">Studio</span></a
-          >
           <nav class="footer__nav">
+            <a href="./index.html" class="logo footer__logo"
+              >Web<span class="logo__accent">Studio</span></a
+            >
             <address>
               <ul class="footer__address-list">
                 <li>
@@ -494,7 +555,7 @@
             </li>
           </ul>
         </div>
-        <div>
+        <div class="footer__subscribe">
           <p class="footer__cta">Подпишитесь на рассылку</p>
           <form class="footer__form" autocomplete="off">
             <input
@@ -595,7 +656,8 @@
                   <use href="./images/icons.svg#icon-check"></use>
                 </svg>
               </span>
-              Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a>
+              Соглашаюсь с рассылкой и принимаю
+              <a href="">Условия договора</a>
             </label>
           </div>
           <button class="modal-send-btn">Отправить</button>
@@ -603,5 +665,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

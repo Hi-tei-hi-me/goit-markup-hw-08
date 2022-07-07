@@ -1,21 +1,39 @@
 .container {
-  width: 1200px;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
+  @include mobile {
+    width: 480px;
+  }
+  @include tablet {
+    width: 768px;
+  }
+  @include desktop {
+    width: 1200px;
+  }
 }
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @include desktop {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 .spec-section {
-  padding-bottom: 94px;
+  padding-bottom: 60px;
+  @include desktop {
+    padding-bottom: 94px;
+  }
 }
 .caption {
   background-color: var(--main-white);
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 24px;
   border-radius: 0px 0px 4px 4px;
+  @include desktop {
+    padding-bottom: 30px;
+  }
 }
 .project-caption {
   padding: 20px 24px;

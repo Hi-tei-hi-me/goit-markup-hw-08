@@ -26,15 +26,13 @@
         <a href="./index.html" class="logo header__logo"
           >Web<span class="logo__accent">Studio</span></a
         >
-        <nav>
+        <nav class="header__nav">
           <ul class="header__nav-list">
             <li>
               <a class="header__nav-link" href="./index.html">Студия</a>
             </li>
             <li>
-              <a class="header__nav-link current" href="./portfolio.html"
-                >Портфолио</a
-              >
+              <a class="header__nav-link current" href="./portfolio.html">Портфолио</a>
             </li>
             <li><a class="header__nav-link" href="#contacts">Контакты</a></li>
           </ul>
@@ -57,6 +55,71 @@
             >
           </li>
         </ul>
+        <button
+          type="button"
+          class="mob-menu__btn"
+          aria-expanded="false"
+          aria-controls="mob-menu"
+          data-menu-button
+        >
+          <svg
+            width="40"
+            height="40"
+            aria-label="Переключатель мобильного меню"
+          >
+            <use
+              class="icon-menu-close"
+              href="./images/icons.svg#icon-menu-close"
+            ></use>
+            <use class="icon-menu" href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
+        <nav class="mob-menu" id="mob-menu" data-menu>
+          <ul class="mob-menu__nav">
+            <li class="mob-menu__nav-item">
+              <a class="mob-menu__nav-link" href="./index.html"
+                >Студия</a
+              >
+            </li>
+            <li class="mob-menu__nav-item">
+              <a class="mob-menu__nav-link mob-current" href="./portfolio.html"
+                >Портфолио</a
+              >
+            </li>
+            <li class="mob-menu__nav-item">
+              <a class="mob-menu__nav-link" href="#contacts">Контакты</a>
+            </li>
+          </ul>
+          <ul class="mob-menu__contact-list">
+            <li class="mob-menu__contact">
+              <a class="mob-menu__contact-tel" href="tel:+380961111111">
+                +38 096 111 11 11</a
+              >
+            </li>
+            <li class="mob-menu__contact">
+              <a
+                class="mob-menu__contact-email"
+                href="mailto:info@devstudio.com"
+              >
+                info@devstudio.com</a
+              >
+            </li>
+          </ul>
+          <ul class="mob-menu__socials">
+            <li class="mob-menu__network">
+              <a class="mob-menu__network-link" href="">Instagram</a>
+            </li>
+            <li class="mob-menu__network">
+              <a class="mob-menu__network-link" href="">Twitter</a>
+            </li>
+            <li class="mob-menu__network">
+              <a class="mob-menu__network-link" href="">Facebook</a>
+            </li>
+            <li class="mob-menu__network">
+              <a class="mob-menu__network-link" href="">LinkedIn</a>
+            </li>
+          </ul>
+        </nav>
       </div>
     </header>
     <main>
@@ -64,13 +127,17 @@
         <div class="container">
           <h1 class="visually-hidden">Projects</h1>
           <ul class="filter-list">
-            <li><button type="button" class="filter-btn">Все</button></li>
-            <li><button type="button" class="filter-btn">Веб-сайты</button></li>
-            <li>
-              <button type="button" class="filter-btn">Приложения</button>
+            <li class="filter-category"><button type="button" class="filter-btn">Все</button></li>
+            <li class="filter-category">
+              <button type="button" class="filter-btn">Веб-сайты</button>
             </li>
-            <li><button type="button" class="filter-btn">Дизайн</button></li>
-            <li><button type="button" class="filter-btn">Маркетинг</button></li>
+            <li class="filter-category">
+              <button type="button" class="filter-btn">Приложения</button>
+            </li class="filter-category">
+            <li class="filter-category"><button type="button" class="filter-btn">Дизайн</button></li>
+            <li class="filter-category">
+              <button type="button" class="filter-btn">Маркетинг</button>
+            </li>
           </ul>
           <ul class="projects-list">
             <li class="project-item">
@@ -81,10 +148,12 @@
               >
                 <div class="project-wrap">
                   <img
-                    src="./images/projects/project1.jpg"
+                    srcset="
+                      ./images/projects/desk-project1.jpg    370w,
+                      ./images/projects/desk-project1@2x.jpg 740w
+                    "
+                    src="./images/projects/desk-project1.jpg"
                     alt="our cool project"
-                    width="370"
-                    height="294"
                   />
                   <p class="project-desc">
                     Ресурс предлагает комплексные предложения с разным уровнем
@@ -106,10 +175,12 @@
               >
                 <div class="project-wrap">
                   <img
-                    src="./images/projects/project2.jpg"
+                    srcset="
+                      ./images/projects/desk-project2.jpg    370w,
+                      ./images/projects/desk-project2@2x.jpg 740w
+                    "
+                    src="./images/projects/desk-project2.jpg"
                     alt="our cool project"
-                    width="370"
-                    height="294"
                   />
                   <p class="project-desc">Product description lies here</p>
                 </div>
@@ -127,10 +198,12 @@
               >
                 <div class="project-wrap">
                   <img
-                    src="./images/projects/project3.jpg"
+                    srcset="
+                      ./images/projects/desk-project3.jpg    370w,
+                      ./images/projects/desk-project3@2x.jpg 740w
+                    "
+                    src="./images/projects/desk-project3.jpg"
                     alt="our cool project"
-                    width="370"
-                    height="294"
                   />
                   <p class="project-desc">Product description lies here</p>
                 </div>
@@ -148,10 +221,12 @@
               >
                 <div class="project-wrap">
                   <img
-                    src="./images/projects/project4.jpg"
+                    srcset="
+                      ./images/projects/desk-project4.jpg    370w,
+                      ./images/projects/desk-project4@2x.jpg 740w
+                    "
+                    src="./images/projects/desk-project4.jpg"
                     alt="our cool project"
-                    width="370"
-                    height="294"
                   />
                   <p class="project-desc">Product description lies here</p>
                 </div>
@@ -169,10 +244,12 @@
               >
                 <div class="project-wrap">
                   <img
-                    src="./images/projects/project5.jpg"
+                    srcset="
+                      ./images/projects/desk-project5.jpg    370w,
+                      ./images/projects/desk-project5@2x.jpg 740w
+                    "
+                    src="./images/projects/desk-project5.jpg"
                     alt="our cool project"
-                    width="370"
-                    height="294"
                   />
                   <p class="project-desc">Product description lies here</p>
                 </div>
@@ -190,10 +267,12 @@
               >
                 <div class="project-wrap">
                   <img
-                    src="./images/projects/project6.jpg"
+                    srcset="
+                      ./images/projects/desk-project6.jpg    370w,
+                      ./images/projects/desk-project6@2x.jpg 740w
+                    "
+                    src="./images/projects/desk-project6.jpg"
                     alt="our cool project"
-                    width="370"
-                    height="294"
                   />
                   <p class="project-desc">Product description lies here</p>
                 </div>
@@ -213,10 +292,12 @@
               >
                 <div class="project-wrap">
                   <img
-                    src="./images/projects/project7.jpg"
+                    srcset="
+                      ./images/projects/desk-project7.jpg    370w,
+                      ./images/projects/desk-project7@2x.jpg 740w
+                    "
+                    src="./images/projects/desk-project7.jpg"
                     alt="our cool project"
-                    width="370"
-                    height="294"
                   />
                   <p class="project-desc">Product description lies here</p>
                 </div>
@@ -234,10 +315,12 @@
               >
                 <div class="project-wrap">
                   <img
-                    src="./images/projects/project8.jpg"
+                    srcset="
+                      ./images/projects/desk-project8.jpg    370w,
+                      ./images/projects/desk-project8@2x.jpg 740w
+                    "
+                    src="./images/projects/desk-project8.jpg"
                     alt="our cool project"
-                    width="370"
-                    height="294"
                   />
                   <p class="project-desc">Product description lies here</p>
                 </div>
@@ -255,10 +338,12 @@
               >
                 <div class="project-wrap">
                   <img
-                    src="./images/projects/project9.jpg"
+                    srcset="
+                      ./images/projects/desk-project9.jpg    370w,
+                      ./images/projects/desk-project9@2x.jpg 740w
+                    "
+                    src="./images/projects/desk-project9.jpg"
                     alt="our cool project"
-                    width="370"
-                    height="294"
                   />
                   <p class="project-desc">Product description lies here</p>
                 </div>
@@ -275,10 +360,10 @@
     <footer class="footer">
       <div class="container">
         <div class="footer__contacts" id="contacts">
-          <a href="./index.html" class="logo footer__logo"
-            >Web<span class="logo__accent">Studio</span></a
-          >
           <nav class="footer__nav">
+            <a href="./index.html" class="logo footer__logo"
+              >Web<span class="logo__accent">Studio</span></a
+            >
             <address>
               <ul class="footer__address-list">
                 <li>
@@ -346,7 +431,7 @@
             </li>
           </ul>
         </div>
-        <div>
+        <div class="footer__subscribe">
           <p class="footer__cta">Подпишитесь на рассылку</p>
           <form class="footer__form" autocomplete="off">
             <input
@@ -366,5 +451,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

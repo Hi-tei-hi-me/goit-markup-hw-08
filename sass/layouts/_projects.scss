@@ -1,17 +1,30 @@
 .filter-list {
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
-  li:not(:last-child) {
-    margin-right: 8px;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-bottom: 25px;
+  @include tablet {
+    justify-content: center;
+    margin-bottom: 15px;
+  }
+  @include desktop {
+    justify-content: center;
+    margin-bottom: 35px;
   }
   *:focus-visible {
     outline-color: var(--accented-accent);
     outline-width: 1px;
   }
 }
+.filter-category {
+  margin-bottom: 15px;
+  &:not(:last-child) {
+    margin-right: 8px;
+  }
+}
 .projects-list {
   display: flex;
+  justify-content: start;
   flex-wrap: wrap;
   margin-right: -30px;
   margin-bottom: -30px;
@@ -20,6 +33,13 @@
   }
 }
 .project-item {
+  width: 100%;
+  @include tablet {
+    width: calc((100% - 2 * 30px) / 2);
+  }
+  @include desktop {
+    width: calc((100% - 3 * 30px) / 3);
+  }
   margin-right: 30px;
   margin-bottom: 30px;
 }

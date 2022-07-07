@@ -5,7 +5,13 @@ body {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  padding-top: 80px;
+  padding-top: 60px;
+  @include tablet {
+    padding-top: 80px;
+  }
+  @include desktop {
+    padding-top: 80px;
+  }
 }
 h1,
 h2,

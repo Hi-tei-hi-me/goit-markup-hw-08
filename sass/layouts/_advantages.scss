@@ -1,14 +1,32 @@
-.advantage__title {
-  @extend %section-title;
-}
 .advantage__list {
-  display: flex;
-  li:not(:last-child) {
-    margin-right: 30px;
+  @include tablet {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-right: -30px;
+    margin-bottom: -30px;
+  }
+  @include desktop {
+    display: flex;
   }
 }
 .advantage__item {
-  width: 270px;
+  width: 100%;
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
+  @include tablet {
+    width: calc((100% - 2 * 30px) / 2);
+    margin-right: 30px;
+    margin-bottom: 30px;
+  }
+  @include desktop {
+    width: calc((100% - 3 * 30px) / 4);
+    &:not(:last-child) {
+      margin-right: 30px;
+      margin-bottom: 0;
+    }
+  }
   text-align: left;
   align-items: center;
   &::before {

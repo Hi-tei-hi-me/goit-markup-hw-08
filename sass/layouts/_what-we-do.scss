@@ -1,14 +1,23 @@
+.about {
+  @include mobile {
+    display: none;
+  }
+  @include tablet {
+    display: none;
+  }
+}
 .about__title {
   @extend %section-title;
+  margin-bottom: 50px;
 }
 .about__list {
   display: flex;
-  li:not(:last-child) {
-    margin-right: 30px;
-  }
 }
 .about__item {
   position: relative;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
   background-color: var(--light-bg);
 }
 .about__desc {

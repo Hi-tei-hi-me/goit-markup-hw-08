@@ -3,24 +3,22 @@
   position: relative;
   text-align: center;
   background-color: var(--dark-bg);
-  @include mobile {
-    max-width: 480px;
-    min-height: 400px;
+  max-width: 480px;
+  min-height: 400px;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/bg/mob-hero-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  @include retina {
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../images/bg/mob-hero-bg.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    @include retina {
-      background-image: linear-gradient(
-          rgba(47, 48, 58, 0.4),
-          rgba(47, 48, 58, 0.4)
-        ),
-        url(../images/bg/mob-hero-bg@2x.jpg);
-    }
+      url(../images/bg/mob-hero-bg@2x.jpg);
   }
   @include tablet {
     max-width: 768px;

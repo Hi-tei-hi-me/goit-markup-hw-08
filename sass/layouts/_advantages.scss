@@ -43,6 +43,13 @@
 }
 @include generate-icons($icons);
 .advantage__name {
+  text-align: center;
+  @include tablet {
+    text-align: left;
+  }
+  @include desktop {
+    text-align: left;
+  }
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;

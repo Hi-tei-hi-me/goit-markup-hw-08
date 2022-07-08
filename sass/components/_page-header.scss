@@ -1,6 +1,8 @@
 .header {
   position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
   width: 100%;
   z-index: 10;
   padding-top: 16px;
@@ -26,7 +28,7 @@
   }
 }
 .header__nav {
-  @include mobile {
+  @media screen and (max-width: 767px) {
     display: none;
   }
 }
@@ -48,10 +50,10 @@
   }
 }
 .header__contact-list {
-  margin-left: auto;
-  @include mobile {
+  @media screen and (max-width: 767px) {
     display: none;
   }
+  margin-left: auto;
   @include tablet {
     li:not(:last-child) {
       margin-bottom: 10px;

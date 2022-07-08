@@ -2,8 +2,8 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 450px;
-  height: 609px;
+  width: 95%;
+  height: 95%;
   padding: 40px;
   font-size: 12px;
   line-height: calc(14 / 12);
@@ -14,6 +14,11 @@
   transform: translate(-50%, -50%) scale(1);
   transition: transform 500ms var(--transition-duration)
     var(--transition-timing);
+  @media screen and (min-width: 480px) {
+    width: 450px;
+    height: 609px;
+    font-size: 10px;
+  }
   @include desktop {
     width: 528px;
     height: 581px;
@@ -51,6 +56,9 @@
   line-height: 1.5;
   text-align: center;
   color: var(--secondary-txt);
+  @media screen and (max-width: 479px) {
+    font-size: 16px;
+  }
   @include desktop {
     line-height: calc(23 / 20);
   }
@@ -124,6 +132,9 @@
 .agree-text {
   @extend %flex-centered;
   font-size: 12px;
+  @media screen and (max-width: 479px) {
+    font-size: 9px;
+  }
   line-height: calc(14 / 12);
   @include desktop {
     font-size: 14px;

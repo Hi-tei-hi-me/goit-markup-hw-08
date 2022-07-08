@@ -69,7 +69,8 @@
   background-color: var(--project-hover);
   opacity: 0;
   transform: translateY(100%);
-  transition: transform 300ms var(--transition-timing);
+  transition: transform 300ms var(--transition-timing),
+    opacity 300ms var(--transition-timing);
   .project-link:hover &,
   .project-link:focus & {
     transform: translateY(0);

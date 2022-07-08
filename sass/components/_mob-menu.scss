@@ -1,31 +1,28 @@
 .mob-menu {
   display: none;
   z-index: 20;
-  position: absolute;
+  position: fixed;
   top: 0;
-  right: 0;
-  width: 100%;
+  left: 0;
+  width: 100vw;
   height: 100vh;
   overflow-y: scroll;
   padding: 48px 40px;
   background-color: var(--main-white);
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08),
-    0px 1px 3px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   &.is-open {
-    display: block;
-  }
-  @include tablet {
-    display: none;
-  }
-  @include desktop {
-    display: none;
+    @media screen and (max-width: 767px) {
+      display: flex;
+      flex-direction: column;
+    }
   }
 }
 .is-open {
   overflow: hidden;
 }
 .mob-menu__nav {
-  margin-bottom: 45%;
+  margin-bottom: auto;
 }
 .mob-menu__nav-item {
   &:not(:last-child) {
@@ -34,7 +31,10 @@
 }
 .mob-menu__nav-link {
   font-weight: 500;
-  font-size: 40px;
+  font-size: 30px;
+  @include mobile {
+    font-size: 40px;
+  }
   line-height: calc(47 / 40);
   letter-spacing: 0.02em;
   color: var(--secondary-txt);
@@ -52,14 +52,20 @@
 }
 .mob-menu__contact-tel {
   font-weight: 500;
-  font-size: 34px;
+  font-size: 24px;
+  @include mobile {
+    font-size: 34px;
+  }
   line-height: calc(40 / 34);
   letter-spacing: 0.02em;
   color: var(--accent);
 }
 .mob-menu__contact-email {
   font-weight: 500;
-  font-size: 24px;
+  font-size: 18px;
+  @include mobile {
+    font-size: 24px;
+  }
   line-height: calc(28 / 24);
   letter-spacing: 0.02em;
   color: var(--main-txt);
@@ -67,6 +73,10 @@
 .mob-menu__socials {
   display: flex;
   align-items: flex-start;
+  font-size: 10px;
+  @include mobile {
+    font-size: 14px;
+  }
 }
 .mob-menu__network {
   color: var(--accent);

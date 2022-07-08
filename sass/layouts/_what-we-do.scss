@@ -1,13 +1,17 @@
 .about {
-  @include mobile {
+  @media screen and (max-width: 1199px) {
     display: none;
   }
-  @include tablet {
-    display: none;
+  @include desktop {
+    display: block;
   }
 }
 .about__title {
   @extend %section-title;
+  @include desktop {
+    font-size: 36px;
+    line-height: 1.17;
+  }
   margin-bottom: 50px;
 }
 .about__list {

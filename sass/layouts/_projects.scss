@@ -44,7 +44,9 @@
   margin-bottom: 30px;
 }
 .project-link {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   transition: box-shadow var(--transition-duration) var(--transition-timing);
   &:hover,
   &:focus {
